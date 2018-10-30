@@ -117,6 +117,18 @@ let yoda_quote = ["The", "greatest", "teacher,", "failure", "is"]
 let yodaSentence = yoda_quote.reduce((a, b) => `${a} ${b}`)
 console.log(`Yoda says, ${yodaSentence}`)
 
+let yoda_quote2 = ["the", "greatest", "teacher", "failure", "is"]
+
+
+// Another way to do it...
+let assembledQuote = yoda_quote2.map(word => {
+  if(word === "the") word = "The"
+  if(word === "teacher") word = "teacher,"
+  return word
+})
+
+console.log(`Yoda says, "${assembledQuote.join(" ")}"`)
+
 // 4) chained array methods =  * Sort the following numbers in descending order
 //    * Remove any integers greater than 19.
 //    * Multiply each remaining number by 1.5 and then substract 1.
