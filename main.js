@@ -115,7 +115,7 @@ console.log(finalNum)
 let yoda_quote = ["The", "greatest", "teacher,", "failure", "is"]
 
 let yodaSentence = yoda_quote.reduce((a, b) => `${a} ${b}`)
-console.log(yodaSentence)
+console.log(`Yoda says, ${yodaSentence}`)
 
 // 4) chained array methods =  * Sort the following numbers in descending order
 //    * Remove any integers greater than 19.
